@@ -1,276 +1,136 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+const numberInput =
+    document.getElementById("numberInput");
 
+const checkBtn =
+    document.getElementById("checkBtn");
 
-body {
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+const result =
+    document.getElementById("result");
 
-    min-height: 100vh;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+function checkNumber() {
 
-    padding: 20px;
+    const inputValue =
+        numberInput.value.trim();
 
-    background:
-        linear-gradient(
-            135deg,
-            #f4f7fb,
-            #e8eef7
-        );
 
-    color: #1f2937;
-}
+    if (inputValue === "") {
 
+        result.innerHTML = `
+            <p class="error">
+                Please enter a number.
+            </p>
+        `;
 
-.container {
-    width: 100%;
-    max-width: 460px;
+        numberInput.focus();
 
-    padding: 35px;
-
-    background: #ffffff;
-
-    border-radius: 18px;
-
-    box-shadow:
-        0 15px 40px
-        rgba(0, 0, 0, 0.12);
-}
-
-
-.header {
-    text-align: center;
-    margin-bottom: 28px;
-}
-
-
-.badge {
-    display: inline-block;
-
-    padding: 6px 12px;
-
-    margin-bottom: 12px;
-
-    border-radius: 20px;
-
-    background: #eef2ff;
-
-    color: #4338ca;
-
-    font-size: 13px;
-    font-weight: 600;
-}
-
-
-h1 {
-    margin-bottom: 8px;
-
-    font-size: 32px;
-
-    color: #111827;
-}
-
-
-.header p {
-    color: #6b7280;
-
-    font-size: 15px;
-
-    line-height: 1.6;
-}
-
-
-.input-group {
-    margin-bottom: 16px;
-}
-
-
-label {
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    color: #374151;
-}
-
-
-input {
-    width: 100%;
-
-    padding: 13px 14px;
-
-    border: 1px solid #d1d5db;
-
-    border-radius: 10px;
-
-    outline: none;
-
-    font-size: 16px;
-
-    transition:
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-input:focus {
-    border-color: #4f46e5;
-
-    box-shadow:
-        0 0 0 3px
-        rgba(79, 70, 229, 0.12);
-}
-
-
-button {
-    width: 100%;
-
-    padding: 13px 16px;
-
-    border: none;
-
-    border-radius: 10px;
-
-    background: #111827;
-
-    color: #ffffff;
-
-    font-size: 16px;
-
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
-}
-
-
-button:hover {
-    background: #374151;
-
-    transform: translateY(-1px);
-}
-
-
-button:active {
-    transform: translateY(0);
-}
-
-
-.result {
-    margin-top: 24px;
-
-    padding: 20px;
-
-    border-radius: 12px;
-
-    background: #f8fafc;
-
-    border: 1px solid #e5e7eb;
-
-    line-height: 1.8;
-
-    color: #374151;
-}
-
-
-.result:empty {
-    display: none;
-}
-
-
-.result-title {
-    margin-bottom: 12px;
-
-    font-size: 18px;
-
-    font-weight: 700;
-
-    color: #111827;
-}
-
-
-.result p {
-    margin-bottom: 4px;
-}
-
-
-.table-title {
-    margin-top: 12px;
-}
-
-
-.multiplication-table {
-    margin-top: 8px;
-
-    padding: 12px;
-
-    border-radius: 8px;
-
-    background: #ffffff;
-
-    border: 1px solid #e5e7eb;
-
-    font-family: monospace;
-
-    line-height: 1.8;
-}
-
-
-.error {
-    color: #b91c1c;
-
-    font-weight: 600;
-
-    text-align: center;
-}
-
-
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
-
-@media (max-width: 520px) {
-
-    body {
-        padding: 15px;
+        return;
     }
 
 
-    .container {
-        padding: 25px 20px;
+    const number =
+        Number(inputValue);
 
-        border-radius: 14px;
+
+    let type;
+
+
+    if (number > 0) {
+
+        type = "Positive";
+
+    } else if (number < 0) {
+
+        type = "Negative";
+
+    } else {
+
+        type = "Zero";
+
     }
 
 
-    h1 {
-        font-size: 27px;
+    const evenOdd =
+        number % 2 === 0
+            ? "Even"
+            : "Odd";
+
+
+    const square =
+        number ** 2;
+
+
+    let table = "";
+
+
+    for (
+        let i = 1;
+        i <= 10;
+        i++
+    ) {
+
+        table += `
+            <div>
+                ${number} × ${i} = ${number * i}
+            </div>
+        `;
+
     }
 
 
-    .header p {
-        font-size: 14px;
-    }
+    result.innerHTML = `
 
+        <div class="result-title">
+            Analysis Result
+        </div>
 
-    input,
-    button {
-        font-size: 15px;
-    }
+        <p>
+            <strong>Number:</strong>
+            ${number}
+        </p>
 
+        <p>
+            <strong>Type:</strong>
+            ${type}
+        </p>
+
+        <p>
+            <strong>Even/Odd:</strong>
+            ${evenOdd}
+        </p>
+
+        <p>
+            <strong>Square:</strong>
+            ${square}
+        </p>
+
+        <p class="table-title">
+            <strong>Multiplication Table:</strong>
+        </p>
+
+        <div class="multiplication-table">
+            ${table}
+        </div>
+
+    `;
 }
+
+
+checkBtn.addEventListener(
+    "click",
+    checkNumber
+);
+
+
+numberInput.addEventListener(
+    "keydown",
+    function (event) {
+
+        if (event.key === "Enter") {
+
+            checkNumber();
+
+        }
+
+    }
+);
