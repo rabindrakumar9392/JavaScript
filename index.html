@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Rabindra Kumar's JavaScript Projects - Practical JavaScript projects built with HTML, CSS and JavaScript."
+    >
+
+    <title>JavaScript Projects | Rabindra Kumar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            min-height: 100vh;
+            padding: 40px 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #1e293b
+                );
+
+            color: #ffffff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            margin-bottom: 15px;
+
+            border-radius: 20px;
+
+            background: #312e81;
+            color: #c7d2fe;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 650px;
+            margin: auto;
+
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+
+        .projects {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(250px, 1fr)
+                );
+
+            gap: 20px;
+        }
+
+        .card {
+            padding: 25px;
+
+            background: #ffffff;
+            color: #1e293b;
+
+            border-radius: 16px;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 15px 35px
+                rgba(0, 0, 0, 0.25);
+        }
+
+        .number {
+            display: inline-block;
+
+            margin-bottom: 15px;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            color: #4f46e5;
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin-bottom: 20px;
+
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 9px 15px;
+
+            border-radius: 8px;
+
+            background: #111827;
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #374151;
+        }
+
+        footer {
+            margin-top: 50px;
+
+            text-align: center;
+
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 15px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <span class="badge">
+                JavaScript Portfolio
+            </span>
+
+            <h1>
+                JavaScript Projects
+            </h1>
+
+            <p>
+                A collection of practical JavaScript projects
+                built to strengthen frontend development,
+                DOM manipulation, events, APIs, and browser
+                functionality.
+            </p>
+        </header>
+
+
+        <section class="projects">
+
+            <article class="card">
+                <span class="number">PROJECT 01</span>
+
+                <h2>Number Checker</h2>
+
+                <p>
+                    Analyze numbers and display their
+                    mathematical properties.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Number-CheckerProject/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 02</span>
+
+                <h2>Todo List</h2>
+
+                <p>
+                    Manage daily tasks using JavaScript
+                    and DOM manipulation.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Todo-List/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 03</span>
+
+                <h2>Weather App</h2>
+
+                <p>
+                    Search and display weather information
+                    using JavaScript.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Weather-App/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 04</span>
+
+                <h2>Expense Tracker</h2>
+
+                <p>
+                    Track income and expenses with a
+                    simple browser interface.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Expense-Tracker/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 05</span>
+
+                <h2>Quiz App</h2>
+
+                <p>
+                    Test programming knowledge through
+                    an interactive quiz application.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Quiz-App/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 06</span>
+
+                <h2>Password Generator</h2>
+
+                <p>
+                    Generate secure random passwords
+                    using JavaScript.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Password-Generator/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 07</span>
+
+                <h2>Notes App</h2>
+
+                <p>
+                    Create and manage notes directly
+                    in the browser.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Notes-App/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 08</span>
+
+                <h2>GitHub Profile Finder</h2>
+
+                <p>
+                    Search GitHub profiles and display
+                    useful profile information.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./GitHub-Profile-Finder/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 09</span>
+
+                <h2>Movie Search App</h2>
+
+                <p>
+                    Search for movies using a
+                    JavaScript API project.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Movie-Search-App/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+
+            <article class="card">
+                <span class="number">PROJECT 10</span>
+
+                <h2>Smart Task Manager</h2>
+
+                <p>
+                    Organize and manage tasks through
+                    an interactive web application.
+                </p>
+
+                <a
+                    class="btn"
+                    href="./Smart-Task-Manager/"
+                >
+                    Live Demo
+                </a>
+            </article>
+
+        </section>
+
+
+        <footer>
+            Built with HTML, CSS and JavaScript
+            • Rabindra Kumar
+        </footer>
+
+    </main>
+
+</body>
+</html>
