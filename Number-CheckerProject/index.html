@@ -2,22 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Checker</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Number Checker - Check whether a number is positive, negative, zero, even, or odd."
+    >
+
+    <title>Number Checker | JavaScript Project</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>Number Checker</h1>
+    <main class="container">
 
-        <input type="number" id="numberInput" placeholder="Enter a number">
+        <div class="header">
+            <span class="badge">JavaScript Project</span>
 
-        <button id="checkBtn">Check Number</button>
+            <h1>Number Checker</h1>
 
-        <div id="result"></div>
-    </div>
+            <p>
+                Enter a number to analyze its properties.
+            </p>
+        </div>
+
+
+        <div class="input-group">
+
+            <label for="numberInput">
+                Enter Number
+            </label>
+
+            <input
+                type="number"
+                id="numberInput"
+                placeholder="e.g. 25"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <button id="checkBtn">
+            Check Number
+        </button>
+
+
+        <div
+            id="result"
+            class="result"
+            aria-live="polite"
+        ></div>
+
+    </main>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
