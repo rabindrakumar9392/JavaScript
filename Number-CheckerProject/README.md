@@ -21,8 +21,32 @@ A simple and responsive JavaScript project that analyzes a number and displays u
 ## 📂 Project Structure
 
 ```text
-01-Number-Checker/
+Number-CheckerProject/
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
+```
+
+## 🌐 Live Demo
+
+🚀 [Open Number Checker Live Demo](https://rabindrakumar9392.github.io/JavaScript/Number-CheckerProject/)
+
+## ▶️ How to Run
+
+1. Clone the repository.
+2. Open the `Number-CheckerProject` folder.
+3. Open `index.html` in a browser.
+
+## 🎯 Learning Concepts
+
+This project demonstrates:
+
+- DOM manipulation
+- Event listeners
+- Functions
+- Conditional statements
+- Loops
+- Template literals
+- User input handling
+- Basic JavaScript calculations
