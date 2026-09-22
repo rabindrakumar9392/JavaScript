@@ -29,7 +29,7 @@ Quiz-App/
 
 ## 🌐 Live Demo
 
-👉 [Open Quiz App Live Demo](https://rabindrakumar9392.github.io/JavaScript/Quiz-App/)
+👉 [Open Quiz App Live Demo](https://rabindrakumar9392.github.io/JavaScript/Quiz%20App/)
 
 ## ▶️ How to Run
 
