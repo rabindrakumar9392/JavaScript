@@ -19,14 +19,9 @@ A simple and responsive password generator built with HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
-
-```text
-Password-Generator/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-
 ## 🌐 Live Demo
-[Live Demo](https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
+
+[svg](https://github.com/rabindrakumar9392/JavaScript/blob/main/Password-Generator/README.md#-live-demo)
+
+👉 [Open Password Generator Live Demo](https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
+
