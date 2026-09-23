@@ -28,4 +28,4 @@ Notes App/
 └── README.md
 
 Live Demo
-👉 [Open Password Generator Live Demo]( https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
+👉 [Open Note-App Live Demo]( https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
