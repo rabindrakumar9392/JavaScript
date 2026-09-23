@@ -20,7 +20,6 @@ A simple and responsive notes application built with HTML, CSS, and JavaScript.
 
 ## 📂 Project Structure
 
-```text
 Notes App/
 ├── index.html
 ├── style.css
