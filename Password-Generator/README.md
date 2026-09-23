@@ -29,5 +29,4 @@ Password-Generator/
 └── README.md
 
 ## 🌐 Live Demo
-Live Demo
-url("https://rabindrakumar9392.github.io/JavaScript/Password-Generator/")
+[Live Demo](https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
