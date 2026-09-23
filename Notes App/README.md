@@ -27,5 +27,6 @@ Notes App/
 ├── script.js
 └── README.md
 
-Live Demo
-👉 [Open Note-App Live Demo]( https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
+## 🌐 Live Demo
+
+👉 [Open Note-App Live Demo](https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
