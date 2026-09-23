@@ -27,3 +27,8 @@ Password-Generator/
 ├── style.css
 ├── script.js
 └── README.md
+
+## 🌐 Live Demo
+👉 [Live Demo](https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
+## 🎥 Demo Video
+👉 [▶️ Watch Demo Video](YOUR_DEMO_VIDEO_LINK)
