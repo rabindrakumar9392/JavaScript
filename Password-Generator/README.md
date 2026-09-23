@@ -30,7 +30,4 @@ Password-Generator/
 
 ## 🌐 Live Demo
 Live Demo
-(https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
-## 🎥 Demo Video
-▶️ Watch Demo Video
-(https://rabindrakumar9392.github.io/JavaScript/Password-Generator/)
+url("https://rabindrakumar9392.github.io/JavaScript/Password-Generator/")
