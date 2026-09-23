@@ -31,5 +31,4 @@ Notes App/
 
 
 ## 🌐 Live Demo
-
-👉 [Open Note-App Live Demo](https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
+(https://rabindrakumar9392.github.io/JavaScript/Notes%20App/)
